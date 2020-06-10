@@ -1,0 +1,34 @@
+<!-- <div>
+    <div *ngFor="let home of homes$ | async" data-test="home" >
+        <div data-test="title">{{home.title}}</div>
+        <div data-test="location">{{home.location}}</div>
+        <div data-test="image">
+            <img src="{{home.image}}" width="200">
+        </div>
+    </div>
+</div> -->
+
+<div class="grid-container">
+    <h1 class="mat-h1">Home</h1>
+    <mat-grid-list cols="2" rowHeight="350px">
+      <mat-grid-tile *ngFor="let home of homes$ | async" data-test="home" colspan="1" rowspan="2">
+        <mat-card class="dashboard-card">
+            <div data-test="image">
+                <img src="{{home.image}}" width="200">
+            </div>
+            <mat-card-header>
+                <mat-card-title data-test="title">
+                {{home.title}}
+                </mat-card-title>
+            </mat-card-header>
+            <mat-card-content class="dashboard-card-content">
+                <div data-test="location">{{home.location}}</div>
+                <div data-test="book-button">
+                    <button (click)="openDialog(home)">Book</button>
+                </div>
+            </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+</div>
+  

@@ -1,0 +1,20 @@
+[
+    {
+      "title": "Home One",
+      "image": "assets/wrist-watch.jpg",
+      "location": "new york",
+      "price": "200"
+    },
+    {
+      "title": "Home two",
+      "image": "assets/wrist-watch.jpg",
+      "location": "chicago",
+      "price": "250"
+    },
+    {
+      "title": "Home three",
+      "image": "assets/wrist-watch.jpg",
+      "location": "california",
+      "price": "300"
+    }
+]
